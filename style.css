@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--Violet);
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem;
+}
+
+.logo {
+
+  width: 120px;
+}
+
+.ilustration {
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.ilustration img {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.invitation h1 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.invitation {
+
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.invitation p {
+  font-size: 1.075rem;
+  line-height: 1.5rem;
+}
+
+.invitation button {
+  padding: .75rem;
+  width: 60%;
+  background: #fff;
+  color: var(--Violet);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 7px 24px -7px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  margin-top: .75rem;
+}
+
+.invitation button:hover {
+  /* background: hsl(257, 100%, 81%); */
+  background: #EE52CB;
+  color: hsl(0, 0%, 97%);
+}
+
+.social-icons {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.social-icon {
+  margin: .25rem;
+  width: 1.1rem;
+  text-align: center;
+  border-radius: 50px;
+  padding: .75rem;
+  display: inline-block;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background: hsl(0, 0%, 100%);
+  color: var(--Violet);
+}
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .wrapper {
+    padding: 0 3.5rem;
+  }
+
+  .logo {
+    width: 11rem;
+    margin-top: 1rem;
+  }
+
+  .container {
+
+    display: flex;
+    margin-top: .75rem;
+    justify-content: space-between;
+
+  }
+
+  .ilustration {
+    margin: 0;
+    text-align: left;
+  }
+
+  .ilustration img {
+    /* width: 0%; */
+    margin-top: 0;
+  }
+
+  .invitation {
+    text-align: left;
+    width: 45%;
+    align-self: flex-start;
+    margin-left: 3rem;
+  }
+
+  .invitation h1 {
+    text-align: left;
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .invitation button {
+    padding: .9rem;
+    width: 35%;
+  }
+
+  .social-icons {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+}
